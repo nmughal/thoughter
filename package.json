@@ -1,0 +1,29 @@
+{
+  "name": "dom-and-ajax-testing-thoughter",
+  "version": "1.0.0",
+  "description": "practicing writing tests for DOM manipulation and Ajax calls",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "karma": "^1.5.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.3.0",
+    "mocha": "^3.2.0",
+    "sinon": "^2.0.0"
+  },
+  "scripts": {
+    "test": "karma start main.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nmughal/thoughter.git"
+  },
+  "author": "Nadia Mughal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmughal/thoughter/issues"
+  },
+  "homepage": "https://github.com/nmughal/thoughter#readme"
+}
