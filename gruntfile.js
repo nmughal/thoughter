@@ -23,11 +23,23 @@ module.exports = function configureGrunt(gruntConfig){
           {
             cwd: 'src/js', //cwd = current working directory
             src:[ '*.js'],
+            dest: 'build/js', //dest =
+            expand: true
+          }
+        ]
+      },
+
+      copyjquery: {
+        files: [
+          {
+            cwd: 'node_modules/jquery/dist/', //cwd = current working directory
+            src: ['jquery.js'],
             dest: 'build/js/vendor', //dest =
             expand: true
           }
         ]
       }
+
     },
 
     sass: {

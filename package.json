@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "practicing writing tests for DOM manipulation and Ajax calls",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.2.0"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "grunt": "^1.0.1",
