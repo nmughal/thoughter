@@ -16,7 +16,7 @@ let exampleObj = {content: 'Hello', createTime: '3/21', id: 'foobar'};
       });
 
       afterEach(function(){
-        let recentTag = document.querySelector('main');
+        let recentTag = document.querySelector('main.recent');
         recentTag.parentNode.removeChild(recentTag);
       });
 
@@ -24,9 +24,9 @@ let exampleObj = {content: 'Hello', createTime: '3/21', id: 'foobar'};
         expect(window.thoughter.showRecent).to.be.a('function');
       });
 
-      it('should add an element for a given array object', function(){
+      it('should should create articles for every thought it is given', function(){
         window.thoughter.showRecent([exampleObj]);
-        let recent = document.querySelectorAll('article');
+        let recent = document.querySelectorAll('main.recent article');
         expect(recent.length).to.equal(1);
       });
 
@@ -46,7 +46,7 @@ let exampleObj = {content: 'Hello', createTime: '3/21', id: 'foobar'};
         expect(recent.length).to.equal(0);
       });
 
-      it('should handle an empty array', function(){
+      it('should handle an empty array by creating no articles', function(){
         window.thoughter.showRecent([]);
         let recent = document.querySelectorAll('article');
         expect(recent.length).to.equal(0);
