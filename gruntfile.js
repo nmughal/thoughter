@@ -10,9 +10,9 @@ module.exports = function configureGrunt(gruntConfig){
       copythehtml: {
         files: [
           {
-            cwd: 'src/', //cwd = current working directory
+            cwd: 'src/',
             src:[ '*.html'],
-            dest: 'build/', //dest =
+            dest: 'build/',
             expand: true
           }
         ]
@@ -21,9 +21,9 @@ module.exports = function configureGrunt(gruntConfig){
       copyjs: {
         files: [
           {
-            cwd: 'src/js', //cwd = current working directory
+            cwd: 'src/js',
             src:[ '*.js'],
-            dest: 'build/js', //dest =
+            dest: 'build/js',
             expand: true
           }
         ]
@@ -32,9 +32,9 @@ module.exports = function configureGrunt(gruntConfig){
       copyjquery: {
         files: [
           {
-            cwd: 'node_modules/jquery/dist/', //cwd = current working directory
+            cwd: 'node_modules/jquery/dist/',
             src: ['jquery.js'],
-            dest: 'build/js/vendor', //dest =
+            dest: 'build/js/vendor',
             expand: true
           }
         ]

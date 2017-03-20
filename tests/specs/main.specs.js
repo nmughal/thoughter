@@ -3,7 +3,7 @@
 
 let exampleObj = {content: 'Hello', createTime: '3/21', id: 'foobar'};
 
-  let expect = chai.expect;
+let expect = chai.expect;
 
   describe('main module', function(){
 
@@ -52,7 +52,7 @@ let exampleObj = {content: 'Hello', createTime: '3/21', id: 'foobar'};
         expect(recent.length).to.equal(0);
       });
 
-      it('should check that all tha tags exists on article', function(){
+      it('should check that all the tags exists on article', function(){
         window.thoughter.showRecent([exampleObj]);
         let articleClass = document.querySelector('article');
         expect(articleClass.classList.contains('panel', 'panel-info')).is.true;
